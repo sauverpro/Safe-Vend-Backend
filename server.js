@@ -23,9 +23,9 @@ const corsOptions = {
 };
 
 // Middleware
-app.use(cors());
 // app.options('*', cors(corsOptions)); // Handle preflight for all routes
 app.use(express.json());
+app.use(cors());
 
 // Database connection
 const connectDB = async () => {
