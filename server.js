@@ -26,7 +26,7 @@ const corsOptions = {
 // app.options('*', cors(corsOptions)); // Handle preflight for all routes
 app.use(express.json());
 app.use(cors({
-  origin: ["http://localhost:5173", "https://safevending.netlify.app","https://safe-vend.vercel.app/"],
+  origin: ["http://localhost:5173", "https://safevending.netlify.app","https://safe-vend.vercel.app"],
   credentials: true
 }));
 
