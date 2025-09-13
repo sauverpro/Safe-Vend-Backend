@@ -25,7 +25,10 @@ const corsOptions = {
 // Middleware
 // app.options('*', cors(corsOptions)); // Handle preflight for all routes
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: ["http://localhost:5173", "https://safevending.netlify.app/"],
+  credentials: true
+}));
 
 // Database connection
 const connectDB = async () => {
