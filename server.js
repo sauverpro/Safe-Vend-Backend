@@ -23,8 +23,8 @@ const corsOptions = {
 };
 
 // Middleware
-app.use(cors(corsOptions));
-app.options('*', cors(corsOptions)); // Handle preflight for all routes
+app.use(cors());
+// app.options('*', cors(corsOptions)); // Handle preflight for all routes
 app.use(express.json());
 
 // Database connection
